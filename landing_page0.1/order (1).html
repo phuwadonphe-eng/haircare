@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อสินค้า — KLOUD (คลาวด์)</title>
+  <meta name="description" content="กรอกข้อมูลเพื่อสั่งซื้อผลิตภัณฑ์ KLOUD">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="KLOUD หน้าแรก">KLOUD</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <h1>สั่งซื้อสินค้า</h1>
+        <p class="lead">กรอกข้อมูลด้านล่าง เราจะติดต่อกลับผ่านเบอร์โทรหรือ Line ที่คุณให้ไว้</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="orderForm" class="form-card">
+
+          <div class="form-row">
+            <label for="customerName">ชื่อลูกค้า</label>
+            <input class="field" type="text" id="customerName" name="customerName" autocomplete="name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="contact">เบอร์โทร / Line</label>
+            <input class="field" type="text" id="contact" name="contact" autocomplete="tel" required>
+          </div>
+
+          <div class="form-row">
+            <label for="items">รายการสินค้า</label>
+            <textarea class="field" id="items" name="items" rows="2" required></textarea>
+          </div>
+
+          <div class="form-row">
+            <label for="total">จำนวนเงินรวม (บาท)</label>
+            <input class="field" type="text" id="total" name="total" inputmode="decimal" required>
+          </div>
+
+          <div class="form-row">
+            <label for="note">หมายเหตุ (ถ้ามี)</label>
+            <textarea class="field" id="note" name="note" rows="2"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--solid" type="submit">ยืนยันสั่งซื้อ</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <div class="logo">KLOUD</div>
+        <p class="small">ปลดปล่อยความล้า แล้วเริ่มต้นวันใหม่ด้วยเส้นผมที่เบาสบาย</p>
+      </div>
+      <nav class="nav" aria-label="เมนูท้ายหน้า">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+      <p class="small">© 2026 KLOUD</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

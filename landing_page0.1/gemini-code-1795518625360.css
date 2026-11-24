@@ -1,0 +1,256 @@
+/* ==========================================================================
+   Fonts & Variables (Luxury Minimalist Theme)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&family=Prompt:wght@300;400;500&display=swap');
+
+:root {
+  /* Core Palette: White, Cream, Deep Beige */
+  --bg-primary: #FAF8F5;      /* Warm Ivory / Off-White */
+  --bg-secondary: #F3EFEA;    /* Soft Cream */
+  --bg-tertiary: #E6DFD5;     /* Warm Beige */
+  --bg-card: #FFFFFF;
+
+  /* Text Colors */
+  --text-primary: #262320;    /* Soft Charcoal */
+  --text-secondary: #68625C;  /* Muted Taupe */
+  --text-muted: #999188;
+
+  /* Accent & Borders */
+  --accent-bronze: #A88B68;   /* Soft Bronze / Champagne Gold */
+  --accent-bronze-hover: #8C7150;
+  --border-light: rgba(38, 35, 32, 0.12);
+  --border-dark: rgba(38, 35, 32, 0.35);
+
+  /* Subtle Mood Accents */
+  --mood-apple: #2D4F3E;      /* Deep Forest Green */
+  --mood-lavender: #6E5A7E;   /* Muted Mid Purple */
+  --mood-strawberry: #C82333; /* Crisp Vibrant Red */
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', 'Prompt', serif;
+  --font-sans: 'Plus Jakarta Sans', 'Prompt', sans-serif;
+
+  /* Generous Spacing */
+  --container-max: 1180px;
+  --section-space: 120px;
+  --transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ==========================================================================
+   Reset & Base Styles
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+/* ==========================================================================
+   Typography Hierarchy
+   ========================================================================== */
+h1, h2, h3, h4, .brand-logo {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  letter-spacing: 0.04em;
+}
+
+h2 {
+  font-size: clamp(1.85rem, 3.5vw, 2.75rem);
+  letter-spacing: 0.03em;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.45rem;
+  letter-spacing: 0.02em;
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--accent-bronze);
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   Layout & Containers
+   ========================================================================== */
+.container {
+  width: 90%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.section {
+  padding: var(--section-space) 0;
+}
+
+.section-alt {
+  background-color: var(--bg-secondary);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 5rem;
+}
+
+/* ==========================================================================
+   Navigation Bar
+   ========================================================================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(250, 248, 245, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-light);
+  padding: 1.4rem 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  font-size: 1.75rem;
+  letter-spacing: 0.14em;
+  text-transform: lowercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.75rem;
+}
+
+.nav-links a {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--text-primary);
+}
+
+/* ==========================================================================
+   Buttons (Thin Borders, Understated Luxury)
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.95rem 2.2rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid var(--border-dark);
+  background-color: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+.btn-accent {
+  border-color: var(--accent-bronze);
+  color: var(--accent-bronze);
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-bronze);
+  color: #FFFFFF;
+}
+
+.btn-solid {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+.btn-solid:hover {
+  background-color: var(--accent-bronze);
+  border-color: var(--accent-bronze);
+  color: #FFFFFF;
+}
+
+.btn-sm {
+  padding: 0.65rem 1.4rem;
+  font-size: 0.75rem;
+}
+
+/* ==========================================================================
+   Subtle Mood Indicators (Small Dots / Thin Underlines Only)
+   ========================================================================== */
+.mood-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.mood-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50

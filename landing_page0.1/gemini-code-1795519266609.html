@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สินค้าทั้งหมด — haircare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">haircare</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html" aria-current="page">สินค้าทั้งหมด</a>
+        <a href="order.html">สั่งซื้อสินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-head">
+      <div class="container">
+        <p class="small muted" style="letter-spacing: 0.22em; text-transform: uppercase;">
+          The Collection
+        </p>
+        <h1>คอลเลกชันแชมพูทั้งหมด</h1>
+        <p class="lead">
+          เลือกกลิ่นและขนาดที่เหมาะกับคุณ มีให้เลือกทั้งขนาดทดลอง 30ml (89 บาท) และขนาดใช้งานปกติ 100ml (199 บาท)
+        </p>
+      </div>
+    </section>
+
+    <!-- Filter Bar (script.js จะสร้างปุ่มกรองใน #filter-bar อัตโนมัติ) -->
+    <section class="filter-wrap">
+      <div class="container">
+        <div id="filter-bar" style="display: flex; gap: 0.75rem; flex-wrap: wrap;"></div>
+      </div>
+    </section>
+
+    <!-- Product Grid (script.js จะ render การ์ดสินค้าใน #product-list อัตโนมัติ) -->
+    <section class="catalog">
+      <div class="container">
+        <div id="product-list" class="grid grid--3"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a href="index.html" class="logo" style="font-size: 1.35rem;">haircare</a>
+        <p class="small muted" style="margin-top: 0.5rem; margin-bottom: 0;">
+          ดูแลเส้นผมและจิตใจในทุกช่วงเวลาของคุณ
+        </p>
+      </div>
+      <div style="display: flex; gap: 2rem; align-items: center;">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้าทั้งหมด</a>
+        <a href="order.html">สั่งซื้อสินค้า</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

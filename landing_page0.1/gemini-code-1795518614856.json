@@ -1,0 +1,62 @@
+[
+  {
+    "id": "apple-fresh-30",
+    "name": "แชมพูสูตร Apple Fresh",
+    "mood": "apple fresh",
+    "type": "shampoo",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/apple-fresh.jpg",
+    "description": "แชมพูกลิ่นแอปเปิ้ลหอมสดชื่นอมเปรี้ยว ช่วยทำความสะอาดผมพร้อมปลุกความกระปรี้กระเปร่าในทุกครั้งที่สระ"
+  },
+  {
+    "id": "apple-fresh-100",
+    "name": "แชมพูสูตร Apple Fresh",
+    "mood": "apple fresh",
+    "type": "shampoo",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/apple-fresh.jpg",
+    "description": "แชมพูกลิ่นแอปเปิ้ลหอมสดชื่นอมเปรี้ยว ช่วยทำความสะอาดผมพร้อมปลุกความกระปรี้กระเปร่าในทุกครั้งที่สระ"
+  },
+  {
+    "id": "strawberry-sweet-30",
+    "name": "แชมพูสูตร Strawberry Sweet",
+    "mood": "strawberry sweet",
+    "type": "shampoo",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/strawberry-sweet.jpg",
+    "description": "แชมพูกลิ่นสตรอว์เบอร์รีหอมหวานละมุน มอบผมนุ่มสลวย เบาสบาย และจัดทรงง่ายอย่างเป็นธรรมชาติ"
+  },
+  {
+    "id": "strawberry-sweet-100",
+    "name": "แชมพูสูตร Strawberry Sweet",
+    "mood": "strawberry sweet",
+    "type": "shampoo",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/strawberry-sweet.jpg",
+    "description": "แชมพูกลิ่นสตรอว์เบอร์รีหอมหวานละมุน มอบผมนุ่มสลวย เบาสบาย และจัดทรงง่ายอย่างเป็นธรรมชาติ"
+  },
+  {
+    "id": "lavender-relax-30",
+    "name": "แชมพูสูตร Lavender Relax",
+    "mood": "lavender relax",
+    "type": "shampoo",
+    "size": "30ml",
+    "price": 89,
+    "image": "images/lavender-relax.jpg",
+    "description": "แชมพูกลิ่นลาเวนเดอร์ผ่อนคลาย ช่วยทำความสะอาดเส้นผมและหนังศีรษะอย่างอ่อนโยน เตรียมพร้อมสำหรับการพักผ่อนอย่างเต็มอิ่ม"
+  },
+  {
+    "id": "lavender-relax-100",
+    "name": "แชมพูสูตร Lavender Relax",
+    "mood": "lavender relax",
+    "type": "shampoo",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/lavender-relax.jpg",
+    "description": "แชมพูกลิ่นลาเวนเดอร์ผ่อนคลาย ช่วยทำความสะอาดเส้นผมและหนังศีรษะอย่างอ่อนโยน เตรียมพร้อมสำหรับการพักผ่อนอย่างเต็มอิ่ม"
+  }
+]
